@@ -1,8 +1,14 @@
+
 # SGCodeTextField
 
 Simple pin code textfield. Customizable via Interface Builder or code.
 
 # Wiki
+
+## Installation
+via Cocoapods
+
+    pod "SGCodeTextField"
 
 ## Customisable properties
 
@@ -57,5 +63,5 @@ Observing text change events:
 
 # Screenshots
 
-<img src="https://i.imgur.com/lu3lVkD.png" alt="Editing mode" style="width: 200px;"/>
-<img src="https://i.imgur.com/ZCy3YLV.png" alt="Default mode" style="width: 200px;"/>
+<img src="https://i.imgur.com/lu3lVkD.png" alt="Editing mode" style="width: 150px;"/>
+<img src="https://i.imgur.com/ZCy3YLV.png" alt="Default mode" style="width: 150px;"/>
