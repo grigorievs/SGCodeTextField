@@ -57,5 +57,5 @@ Observing text change events:
 
 # Screenshots
 
-![Editing mode](https://i.imgur.com/lu3lVkD.png)
-![Default mode](https://i.imgur.com/ZCy3YLV.png)
+<img src="https://i.imgur.com/lu3lVkD.png" alt="Editing mode" style="width: 200px;"/>
+<img src="https://i.imgur.com/ZCy3YLV.png" alt="Default mode" style="width: 200px;"/>
