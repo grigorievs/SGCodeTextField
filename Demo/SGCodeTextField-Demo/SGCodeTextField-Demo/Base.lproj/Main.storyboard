@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SGCodeTextField_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNi-qd-1id" customClass="SGCodeTextField" customModule="SGCodeTextField">
+                                <rect key="frame" x="30" y="71" width="315" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DPi-5r-0p1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SGCodeTextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWv-v1-Nsz">
+                                <rect key="frame" x="122" y="30" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="779-BE-Id6">
+                                <rect key="frame" x="172.5" y="136" width="30" height="34"/>
+                                <state key="normal" title="⛅️"/>
+                                <state key="selected" title="☀️"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="779-BE-Id6" firstAttribute="top" secondItem="yNi-qd-1id" secondAttribute="bottom" constant="15" id="8Jc-KX-exo"/>
+                            <constraint firstItem="779-BE-Id6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UIf-ZN-3rR"/>
+                            <constraint firstItem="WWv-v1-Nsz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a5M-w0-m2q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yNi-qd-1id" secondAttribute="trailing" constant="30" id="aN1-dx-4Mu"/>
+                            <constraint firstItem="yNi-qd-1id" firstAttribute="top" secondItem="WWv-v1-Nsz" secondAttribute="bottom" constant="20" id="bby-zk-zwx"/>
+                            <constraint firstItem="WWv-v1-Nsz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="d8o-TF-SAh"/>
+                            <constraint firstItem="yNi-qd-1id" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="nl7-h2-xeG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="codeTextField" destination="yNi-qd-1id" id="sua-Ce-OfT"/>
+                        <outlet property="doneButton" destination="779-BE-Id6" id="ytz-PQ-F45"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="2"/>
+        </scene>
+    </scenes>
+</document>
