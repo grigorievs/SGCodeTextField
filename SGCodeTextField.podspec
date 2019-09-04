@@ -25,12 +25,14 @@ Simple pin code textfield. Customizable via Interface Builder or code.
   s.screenshots      = 'https://i.imgur.com/lu3lVkD.png', 'https://i.imgur.com/ZCy3YLV.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Sergiu Grigoriev' => 'sergiugrig@gmail.com' }
-  s.source           = { :git => 'https://github.com/grigorievs/SGCodeTextField.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/grigorievs/SGCodeTextField.git'}
   s.social_media_url = 'https://twitter.com/grigorievs'
 
-  s.ios.deployment_target = '8.0'
+  s.swift_version = '4.2'
+  s.swift_versions = ['4.0', '4.2', '5.0']
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SGCodeTextField/*'  
+  s.source_files = 'SGCodeTextField/*.swift'  
   s.frameworks = 'UIKit'
   
 end
