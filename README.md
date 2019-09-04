@@ -1,4 +1,5 @@
 
+
 # SGCodeTextField
 
 Simple pin code textfield. Customizable via Interface Builder or code.
@@ -43,8 +44,18 @@ Customizing via code:
  
 ## Usage
 
+Interface Builder
+
+    Drag and drop a 'UIView' on to the desired view and change class to 'SGCodeTextField'.
+
+Code
+
+    let codeTextField = SGCodeTextField()
+
 Getting text:
 
+    import SGCodeTextField
+    
     let value = self.codeTextField.text
 
 Setting text:
