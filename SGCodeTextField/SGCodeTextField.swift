@@ -26,24 +26,89 @@
 import Foundation
 import UIKit
 
+@IBDesignable
 public class SGCodeTextField: UIView {
-	
-	@IBInspectable public var count: Int = 6
-	@IBInspectable public var placeholder: String = "-"
-	@IBInspectable public var autocapitalization: Bool = true
-	@IBInspectable public var font: UIFont = UIFont.systemFont(ofSize: 18.0)
-	@IBInspectable public var digitCornerRadius: CGFloat = 5.0
-	@IBInspectable public var digitBackgroundColor: UIColor = UIColor.white
-	@IBInspectable public var digitBackgroundColorFocused: UIColor = UIColor.lightGray
-	@IBInspectable public var digitBackgroundColorEmpty: UIColor = UIColor.white
-	@IBInspectable public var digitBorderColor: UIColor = UIColor.gray
-	@IBInspectable public var digitBorderColorFocused: UIColor = UIColor.black
-	@IBInspectable public var digitBorderColorEmpty: UIColor = UIColor.lightGray
-	@IBInspectable public var digitBorderWidth: CGFloat = 1.0
-	@IBInspectable public var digitSpacing: CGFloat = 5.0
-	@IBInspectable public var textColor: UIColor = UIColor.black
-	@IBInspectable public var textColorFocused: UIColor = UIColor.black
-	@IBInspectable public var placeholderColor: UIColor = UIColor.lightGray
+    
+    @IBInspectable public var count: Int = 6 {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var placeholder: String = "-" {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var autocapitalization: Bool = true  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var font: UIFont = UIFont.systemFont(ofSize: 18.0)  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var digitCornerRadius: CGFloat = 5.0  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var digitBackgroundColor: UIColor = UIColor.white  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var digitBackgroundColorFocused: UIColor = UIColor.lightGray  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var digitBackgroundColorEmpty: UIColor = UIColor.white  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var digitBorderColor: UIColor = UIColor.gray  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var digitBorderColorFocused: UIColor = UIColor.black  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var digitBorderColorEmpty: UIColor = UIColor.lightGray  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var digitBorderWidth: CGFloat = 1.0  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var digitSpacing: CGFloat = 5.0  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var textColor: UIColor = UIColor.black  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var textColorFocused: UIColor = UIColor.black  {
+        didSet {
+            refreshUI()
+        }
+    }
+    @IBInspectable public var placeholderColor: UIColor = UIColor.lightGray  {
+        didSet {
+            refreshUI()
+        }
+    }
 	
 	public var textChangeHandler: ((_ text: String?, _ completed: Bool) -> Void)?
 	public var keyboardType: UIKeyboardType {
