@@ -27,7 +27,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-public class SGCodeTextField: UIView {
+public class SGCodeTextField: UIControl {
     
     @IBInspectable public var count: Int = 6 {
         didSet {
@@ -238,14 +238,17 @@ public class SGCodeTextField: UIView {
 	@objc private func textDidChange(sender: UITextField) {
 		self.updateLabels()
 		self.textChangeHandler?(self.text, self.text?.count == self.count)
+        sendActions(for: .editingChanged)
 	}
 	
 	@objc private func editingDidBegin(sender: UITextField) {
 		self.updateLabels()
+        sendActions(for: .editingDidBegin)
 	}
 	
 	@objc private func editingDidEnd(sender: UITextField) {
 		self.updateLabels()
+        sendActions(for: .editingDidEnd)
 	}
 	
 	// MARK: - UI
