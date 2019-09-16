@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SGCodeTextField'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Simple pin code textfield.'
 
 # This description is used to generate tags and improve search results.
