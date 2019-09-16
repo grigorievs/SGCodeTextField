@@ -31,6 +31,7 @@ public class SGCodeTextField: UIControl {
     
     @IBInspectable public var count: Int = 6 {
         didSet {
+            if count < 1 { count = 1}
             refreshUI()
         }
     }
