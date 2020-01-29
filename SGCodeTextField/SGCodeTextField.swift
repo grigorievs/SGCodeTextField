@@ -223,10 +223,12 @@ public class SGCodeTextField: UIControl {
 	
 	// MARK: - Public
 	
+    @discardableResult
 	override public func becomeFirstResponder() -> Bool {
 		return self.textField.becomeFirstResponder()
 	}
 	
+    @discardableResult
 	override public func resignFirstResponder() -> Bool {
 		return self.textField.resignFirstResponder()
 	}
