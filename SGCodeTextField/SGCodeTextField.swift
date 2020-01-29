@@ -190,11 +190,16 @@ public class SGCodeTextField: UIControl {
 		self.updateLabels()
 		
 		self.insertSubview(self.textField, at: 0)
-		self.textField.keyboardType = .numberPad
-		self.textField.isHidden = true
-		self.textField.delegate = self
-	}
-	
+        self.textField.keyboardType = .numberPad
+        self.textField.isHidden = true
+        self.textField.delegate = self
+        
+        // Note: Received message must containt one of the following words for the auto-complete to work: passcode, code
+        if #available(iOS 12, *) {
+            self.textField.textContentType = .oneTimeCode
+        }
+    }
+    
 	private func addGestures() {
 		let tap = UITapGestureRecognizer(target: self, action: #selector(onTap))
 		self.addGestureRecognizer(tap)
