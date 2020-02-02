@@ -193,6 +193,11 @@ public class SGCodeTextField: UIControl {
 		self.textField.keyboardType = .numberPad
 		self.textField.isHidden = true
 		self.textField.delegate = self
+        
+        /// Note: Received message must containt one of the following words for the auto-complete to work: passcode, code
+        if #available(iOS 12, *) {
+            self.textField.textContentType = .oneTimeCode
+        }
 	}
 	
 	private func addGestures() {
@@ -218,10 +223,12 @@ public class SGCodeTextField: UIControl {
 	
 	// MARK: - Public
 	
+    @discardableResult
 	override public func becomeFirstResponder() -> Bool {
 		return self.textField.becomeFirstResponder()
 	}
 	
+    @discardableResult
 	override public func resignFirstResponder() -> Bool {
 		return self.textField.resignFirstResponder()
 	}
