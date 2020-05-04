@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct SGCodeTextFieldConfiguration {
 	var keyboardType: UIKeyboardType = .numberPad
