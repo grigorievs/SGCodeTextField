@@ -24,7 +24,6 @@
 //
 
 import Foundation
-#if canImport(UIKit)
 
 @IBDesignable
 public class SGCodeTextField: UIControl {
@@ -314,4 +313,3 @@ extension SGCodeTextField: UITextFieldDelegate {
 	}
 }
 
-#endif
