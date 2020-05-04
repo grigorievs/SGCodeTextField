@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "SGCodeTextField",
+    platforms: [.iOS(.v10)],
     products: [
         .library(
             name: "SGCodeTextField", targets: ["SGCodeTextField"]),
