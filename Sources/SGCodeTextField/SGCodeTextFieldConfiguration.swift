@@ -24,7 +24,7 @@
 //
 
 import Foundation
-import UIKit
+#if canImport(UIKit)
 
 struct SGCodeTextFieldConfiguration {
 	var keyboardType: UIKeyboardType = .numberPad
@@ -36,3 +36,5 @@ struct SGCodeTextFieldConfiguration {
 	var digitBorderColorFocused: UIColor = UIColor.green
 	var digitBorderWidth: CGFloat = 1.0
 }
+
+#endif
