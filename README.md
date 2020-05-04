@@ -15,7 +15,7 @@ via CocoaPods
 via SwiftPackageManager
 
     dependencies: [
-        .package(url: "https://github.com/grigorievs/SGCodeTextField.git", .upToNextMajor(from: "0.1.3"))
+        .package(url: "https://github.com/grigorievs/SGCodeTextField.git", .upToNextMajor(from: "0.1.4"))
     ]
 
 ## Customisable properties
