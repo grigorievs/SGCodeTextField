@@ -10,6 +10,13 @@ Simple pin code textfield. Customizable via Interface Builder or code.
 via CocoaPods
 
     pod "SGCodeTextField"
+    
+    
+via SwiftPackageManager
+
+    dependencies: [
+        .package(url: "https://github.com/grigorievs/SGCodeTextField.git", .upToNextMajor(from: "0.1.3"))
+    ]
 
 ## Customisable properties
 
