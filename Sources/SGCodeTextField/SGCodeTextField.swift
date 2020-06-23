@@ -195,7 +195,7 @@ public class SGCodeTextField: UIControl {
 		self.textField.delegate = self
         
         /// Note: Received message must containt one of the following words for the auto-complete to work: passcode, code
-        if #available(iOS 12, *) {
+        if #available(iOS 12, tvOS 12) {
             self.textField.textContentType = .oneTimeCode
         }
 	}
