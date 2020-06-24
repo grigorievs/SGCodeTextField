@@ -2,7 +2,7 @@
 
 # SGCodeTextField
 
-Simple pin code textfield. Customizable via Interface Builder or code.
+Simple pin code textfield for iOS and tvOS. Customizable via Interface Builder or code.
 
 # Wiki
 
