@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "SGCodeTextField",
-    platforms: [.iOS(.v9)],
+    platforms: [.iOS(.v9), .tvOS(.v9)],
     products: [
         .library(
             name: "SGCodeTextField", targets: ["SGCodeTextField"]),
@@ -13,6 +13,6 @@ let package = Package(
     targets: [
         .target(
             name: "SGCodeTextField",
-             path: "Sources")
+            path: "Sources")
     ]
 )
