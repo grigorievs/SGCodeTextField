@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SGCodeTextField'
-  s.version          = '0.1.2'
-  s.summary          = 'Simple pin code textfield.'
+  s.version          = '0.1.5'
+  s.summary          = 'Simple pin code textfield for iOS and tvOS.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,11 +28,12 @@ Simple pin code textfield. Customizable via Interface Builder or code.
   s.source           = { :git => 'https://github.com/grigorievs/SGCodeTextField.git', :tag => s.version}
   s.social_media_url = 'https://twitter.com/grigorievs'
 
-  s.swift_version = '4.2'
-  s.swift_versions = ['4.0', '4.2', '5.0']
+  s.swift_versions = ['4.0', '4.2', '5.0', '5.1', '5.2]
+  
   s.ios.deployment_target = '9.0'
-
-  s.source_files = 'SGCodeTextField/*.swift'  
+  s.tvos.deployment_target = '9.0'
+  
+  s.source_files = 'SGCodeTextField/*.swift'
   s.frameworks = 'UIKit'
   
 end
