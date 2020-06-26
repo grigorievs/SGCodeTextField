@@ -81,5 +81,10 @@ Observing text change events:
 
 # Screenshots
 
-<img src="https://i.imgur.com/lu3lVkD.png" alt="Editing mode" width="250px;"/>
-<img src="https://i.imgur.com/ZCy3YLV.png" alt="Default mode" width="250px;"/>
+<img src="https://i.imgur.com/lu3lVkD.png" align="left" alt="Editing mode" width="250px;"/>
+<img src="https://i.imgur.com/ZCy3YLV.png" align="center" alt="Default mode" width="250px;"/>
+
+
+### Other customisations
+
+<img src="https://i.imgur.com/2CuJxJ9.png" align="left" alt="Editing mode" width="250px;"/>
