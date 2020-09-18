@@ -33,7 +33,7 @@ Simple pin code textfield. Customizable via Interface Builder or code.
   s.ios.deployment_target = '9.0'
   s.tvos.deployment_target = '9.0'
   
-  s.source_files = 'SGCodeTextField/*.swift'
+  s.source_files = 'Sources/SGCodeTextField/*.swift'
   s.frameworks = 'UIKit'
   
 end
