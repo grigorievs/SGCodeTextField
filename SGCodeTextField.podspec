@@ -28,7 +28,7 @@ Simple pin code textfield. Customizable via Interface Builder or code.
   s.source           = { :git => 'https://github.com/grigorievs/SGCodeTextField.git', :tag => s.version}
   s.social_media_url = 'https://twitter.com/grigorievs'
 
-  s.swift_versions = ['4.0', '4.2', '5.0', '5.1', '5.2]
+  s.swift_versions = ['4.0', '4.2', '5.0', '5.1', '5.2']
   
   s.ios.deployment_target = '9.0'
   s.tvos.deployment_target = '9.0'
