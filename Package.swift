@@ -8,11 +8,11 @@ let package = Package(
     platforms: [.iOS(.v9), .tvOS(.v9)],
     products: [
         .library(
-            name: "SGCodeTextField", targets: ["SGCodeTextField"]),
+            name: "SGCodeTextField",
+			targets: ["SGCodeTextField"]
+		),
     ],
     targets: [
-        .target(
-            name: "SGCodeTextField",
-            path: "Sources")
+        .target(name: "SGCodeTextField")
     ]
 )
