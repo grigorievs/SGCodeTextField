@@ -110,6 +110,16 @@ public class SGCodeTextField: UIControl {
             refreshUI()
         }
     }
+	@IBInspectable public var isSecureTextEntry: Bool = false {
+		didSet {
+			refreshUI()
+		}
+	}
+	@IBInspectable public var secureTextEntryMaskCharacter: String = "*" {
+		didSet {
+			refreshUI()
+		}
+	}
 	
 	public var textChangeHandler: ((_ text: String?, _ completed: Bool) -> Void)?
 	public var keyboardType: UIKeyboardType {
@@ -270,10 +280,11 @@ public class SGCodeTextField: UIControl {
 				let str = self.text ?? ""
 				let index = str.index(str.startIndex, offsetBy: i)
 				let lbl = self.stackView.subviews[i] as! UILabel
+				let character = self.isSecureTextEntry ? self.secureTextEntryMaskCharacter : String(str[index])
 				
 				lbl.backgroundColor = self.digitBackgroundColor
 				lbl.textColor = self.textColor
-				lbl.text = self.autocapitalization ? String(str[index]).uppercased() : String(str[index])
+				lbl.text = self.autocapitalization ? character.uppercased() : character
 				lbl.layer.borderColor = self.digitBorderColor.cgColor
 				
 				lastIndex = i
